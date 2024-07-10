@@ -1,0 +1,9 @@
+favicon: /favicon.svg
+cover: /cover.gif
+
+menu:
+    Posts: /posts
+header_menu:
+    Posts: /posts
+
+posts_category_depth: 0

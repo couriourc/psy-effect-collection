@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 心理学效应
 subtitle: ''
 description: ''
 keywords:
@@ -40,7 +40,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 syntax_highlighter: highlight.js
@@ -54,7 +54,10 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ''
-
+marked:
+  prependRoot: true
+  postAsset: true
+  quotes: '“”‘’'
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -65,7 +68,7 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
+default_category: 
 category_map:
 tag_map:
 
@@ -105,3 +108,45 @@ deploy:
   repo: https://github.com/couriourc/psy-effect-collection.git
   branch: [release]
   message: "❤️更新时间: {{ now('YYYY-MM-DD HH:mm') }}"
+# Generate categories from directory-tree
+# Dependencies: https://github.com/xu-song/hexo-auto-category
+# depth: the max_depth of directory-tree you want to generate, should > 0
+# multiple: multiple category hierarchies
+auto_category:
+ enable: true
+ multiple: true
+ depth: 
+
+# Automatically transforms URLs into links. This hexo plugin is a wrapper around the Autolinker.js library.
+autolinker:
+  enable: true
+  newWindow: true
+  urls: false
+  email: true
+  tel: false
+  twitter: false
+  hashtag: instagram
+  className: 'linker'
+
+cute:
+  enable: true
+  html:
+    enable: true
+    #....
+  css: 
+    enable: true
+    #.....
+  js: 
+    enable: true
+    #.....
+
+unocss:
+  # 是否启用
+  enable: true
+
+  # 生成的样式文件
+  # 以 source 为根目录
+  file: "styles/uno.css"
+
+  # 扫描文件
+  patterns: ["source/**/*.md"]

@@ -12,7 +12,13 @@
     "version": "7.3.0"
   },
   "dependencies": {
+    "@unocss/preset-attributify": "^0.61.3",
+    "@unocss/preset-uno": "^0.61.3",
     "hexo": "^7.3.0",
+    "hexo-admonition": "^1.1.2",
+    "hexo-auto-category": "^0.2.2",
+    "hexo-autolinker": "^1.0.1",
+    "hexo-cute": "^1.0.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
@@ -22,6 +28,11 @@
     "hexo-renderer-marked": "^6.3.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-theme-landscape": "^1.0.0"
+    "hexo-theme-landscape": "^1.0.0",
+    "hexo-unocss": "^1.0.4",
+    "unocss": "^0.61.3"
+  },
+  "devDependencies": {
+    "@unocss/cli": "^0.61.3"
   }
 }
